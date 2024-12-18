@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button-primary2 {
+  background-color: blue;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-primary {
+  @apply bg-blue-700  text-white px-2 py-1 rounded-lg shadow-lg cursor-pointer hover:scale-110;
+}
+
+.diseño-input {
+  @apply border  px-2 py-1 rounded-lg outline-none focus:border-black  border-indigo-500;
+}
+.divgrande {
+  @apply flex flex-col items-center w-full h-screen gap-4;
+}
+.debug {
+  border: 1px solid red;
+}
+.centrar {
+  @apply flex  justify-center items-center  flex-col w-full h-screen;
+}
+
+.tabla {
+  @apply w-full text-left border border-separate rounded border-slate-200;
+}
+
+.td {
+  @apply h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500;
+}
+.th {
+  @apply h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100;
+}
+
+.tr {
+  @apply transition-colors duration-300 hover:bg-slate-50;
+}
